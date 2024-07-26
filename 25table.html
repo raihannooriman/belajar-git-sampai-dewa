@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tabel</h1>
+    <table style="border: 1px solid black">
+      <!-- judul table -->
+      <caption>
+        Contoh table
+      </caption>
+      <!-- style pada kolom -->
+      <colgroup>
+        <col span="2" style="background-color: red" />
+        <col style="background-color: blue" />
+      </colgroup>
+      <!-- header table -->
+      <thead>
+        <tr>
+          <th colspan="2">Header 1-2</th>
+          <th>Header 3</th>
+        </tr>
+      </thead>
+      <!-- body table -->
+      <tbody>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+        </tr>
+      </tbody>
+      <!-- footer table -->
+      <tfoot>
+        <tr>
+          <td rowspan="2">Footer 1</td>
+          <td>Footer 2</td>
+          <td>Footer 3</td>
+        </tr>
+        <tr>
+          <td>Footer 2</td>
+          <td>Footer 3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
