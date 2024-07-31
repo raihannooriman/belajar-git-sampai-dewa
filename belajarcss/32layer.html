@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @layer a, b;
+      h2 {
+        color: blue;
+      }
+      @layer a {
+        h1 {
+          color: red;
+        }
+      }
+      @layer b {
+        h1 {
+          color: green;
+        }
+      }
+    </style>
+    <title>Layer</title>
+  </head>
+  <body>
+    <h1>Judul</h1>
+    <h2>Sub Judul</h2>
+  </body>
+</html>
