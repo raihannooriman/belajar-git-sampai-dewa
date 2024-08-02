@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: [cl1] 100px [cl2] auto [cl3] 100px [cl4];
+        grid-template-rows: [rl1] 50px [rl2] auto [rl3] 100px [rl4];
+      }
+      .konten {
+        background-color: pink;
+        grid-column-start: cl2;
+        grid-column-end: cl3;
+        grid-row-start: rl2;
+        grid-row-end: rl3;
+      }
+      header {
+        background-color: aqua;
+        grid-column-start: cl1;
+        grid-column-end: cl4;
+        grid-row-start: rl1;
+        grid-row-end: rl2;
+      }
+      footer {
+        background-color: aqua;
+        grid-column-start: cl1;
+        grid-column-end: cl4;
+        grid-row-start: rl3;
+        grid-row-end: rl4;
+      }
+    </style>
+    <title>Grid Tempelates</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Ini Header</header>
+      <div class="konten">
+        <h1>Judul</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, vel
+          velit! Inventore sapiente similique fugiat perspiciatis accusamus illo
+          explicabo alias cum quod molestias ducimus voluptatibus, velit
+          obcaecati ea ut? Possimus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illo,
+          voluptatem nam aspernatur ad obcaecati.
+        </p>
+      </div>
+      <footer>
+        <p>Ini Footer</p>
+      </footer>
+    </div>
+  </body>
+</html>

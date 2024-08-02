@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        grid-template-rows: 50px auto 100px;
+        grid-template-areas: "header header header" ". konten ." "footer footer footer";
+      }
+      .konten {
+        background-color: pink;
+        grid-area: konten;
+      }
+      header {
+        background-color: aqua;
+        grid-area: header;
+      }
+      footer {
+        background-color: aqua;
+        grid-area: footer;
+      }
+    </style>
+    <title>Grid Area</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Ini Header</header>
+      <div class="konten">
+        <h1>Judul</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, vel
+          velit! Inventore sapiente similique fugiat perspiciatis accusamus illo
+          explicabo alias cum quod molestias ducimus voluptatibus, velit
+          obcaecati ea ut? Possimus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illo,
+          voluptatem nam aspernatur ad obcaecati.
+        </p>
+      </div>
+      <footer>
+        <p>Ini Footer</p>
+      </footer>
+    </div>
+  </body>
+</html>
