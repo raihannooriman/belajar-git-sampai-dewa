@@ -109,10 +109,11 @@ nav a {
   justify-content: space-between;
 }
 .captioncard h3 {
-  display: inline;
+  display: inline-block;
   font-size: 30px;
   padding: 1px 5px;
   border-radius: 7px;
+  margin: 0;
 }
 .learnmore {
   width: 164px;
@@ -154,6 +155,44 @@ nav a {
 }
 #cta {
   display: flex;
-
+  border-radius: 45px;
+  height: 227px;
   justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 60px;
+}
+.ctacaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  padding: 0;
+}
+.ctacaption h3 {
+  margin: 0px;
+}
+.ctacaption p {
+  font-size: 20px;
+}
+.ctacaption button {
+  width: 288px;
+  height: 68px;
+  padding: 20px 35px;
+  border-radius: 14px;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.ctaimg {
+  width: 359px;
+  position: relative;
+  margin-right: 60px;
+}
+.ctaimg img {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  object-fit: cover;
 }
